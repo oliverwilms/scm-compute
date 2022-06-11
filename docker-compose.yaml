@@ -2,7 +2,7 @@ version: '3.6'
 services:
   compute:
     image: "quay.vapo.va.gov/scm/irishealth/iris-scm-compute:1.1.14"
-    command: --check-caps false
+    command: --check-caps false --key /ICS/iris.key
     restart: always
     ports:
       - 2188
