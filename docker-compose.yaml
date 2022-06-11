@@ -2,3 +2,12 @@ version: '3.6'
 services:
   compute:
     image: "quay.vapo.va.gov/scm/irishealth/iris-scm-compute:1.1.14"
+    command: --check-caps false
+    restart: always
+    ports:
+      - 2188
+      - 19800:1972
+      - 57700:52773
+      - 53773
+    volumes:
+      - /efs/ICS:/ICS
