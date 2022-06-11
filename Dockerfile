@@ -1,4 +1,5 @@
 ARG IMAGE=quay.vapo.va.gov/helm/helm-valip-iris-hscustom:latest
+ARG IMAGE=helm-valip-iris-hscustom:1.1.1
 FROM $IMAGE AS src
 
 #-Labels------------------------------------------------------------------------
