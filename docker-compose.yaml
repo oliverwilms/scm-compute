@@ -1,4 +1,4 @@
 version: '3.6'
 services:
   compute:
-    image: "helm-valip-iris-compute:1.1.1"
+    image: "quay.vapo.va.gov/scm/irishealth/iris-scm-compute:1.1.14"
