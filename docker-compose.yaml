@@ -1,7 +1,7 @@
 version: '3.6'
 services:
   compute:
-    image: "quay.vapo.va.gov/scm/irishealth/iris-scm-compute:1.1.14"
+    image: "helm-valip-quay-quay-quay.apps.vapo-aws-dsoi-dev.va.gov/helm/helm-valip-iris-compute:1.0.14-3d908a2"
     command: --check-caps false --key /ICS/iris.key
     restart: always
     ports:
